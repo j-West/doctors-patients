@@ -1,1 +1,8 @@
-<h1 class="text-center">Second Partial</h1>
+<h1 class="text-center">Patients</h1>
+
+<ul ng-repeat="patient in patients">
+  <li>{{ patient.first_name }} {{ patient.last_name }}</li>
+  <li>{{ patient.ailment }}</li>
+</ul>
+
+<a href="/" class="btn btn-info">Back</a>

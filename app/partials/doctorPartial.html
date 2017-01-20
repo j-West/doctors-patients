@@ -1,6 +1,6 @@
 <h1 class="text-center">Doctors</h1>
 <ul ng-repeat="doctor in doctors">
-  <li><a href="">{{ doctor.first_name }} {{ doctor.last_name }}</a></li>
+  <li><a href="#/patients/{{doctor.last_name}}">{{ doctor.first_name }} {{ doctor.last_name }}</a></li>
   <li>{{ doctor.speciality }}</li>
 
 </ul>
