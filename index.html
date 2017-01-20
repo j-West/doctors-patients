@@ -14,7 +14,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="#/">First</a></li>
-        <li><a href="#/second">Second</a></li>
+        <li><a href="#/patients">Second</a></li>
         <li><a href="#/third">Third</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -24,13 +24,15 @@
 <div class="container">
   <div ng-view></div>
 </div>
+<script src="app/lib/firebase/firebase.js"></script>
 <script src="app/lib/angular/angular.js"></script>
 <script src="app/lib/angular-route/angular-route.js"></script>
 <script src="app/app.js"></script>
 <script src="app/config.js"></script>
-<script src="app/controllers/first.js"></script>
-<script src="app/controllers/second.js"></script>
-<script src="app/controllers/third.js"></script>
+<script src="app/factories/getFactory.js"></script>
+<script src="app/controllers/DoctorCtrl.js"></script>
+<script src="app/controllers/PatientCtrl.js"></script>
+
 
 </body>
 </html>

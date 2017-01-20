@@ -2,16 +2,12 @@ app.config(($routeProvider, $locationProvider) => {
   $locationProvider.hashPrefix("");
   $routeProvider
     .when("/", {
-      controller: "FirstCtrl",
-      templateUrl: "app/partials/firstpartial.html",
+      controller: "DoctorCtrl",
+      templateUrl: "app/partials/doctorPartial.html",
     })
-    .when("/second", {
-      controller: "SecondCtrl",
-      templateUrl: "app/partials/secondpartial.html",
-    })
-    .when("/third", {
-      controller: "ThirdCtrl",
-      templateUrl: "app/partials/thirdpartial.html",
+    .when("/patients/:docID", {
+      controller: "PatientCtrl",
+      templateUrl: "app/partials/patientPartial.html",
     })
     .otherwise({
       redirectTo: "/"
